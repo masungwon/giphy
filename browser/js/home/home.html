@@ -1,9 +1,10 @@
 <section id="home">
 
-	<h1>Search for gifs:</h1>
+	<h1 class="cover-heading">Search for gifs:</h1>
 	<center><input type="text" ng-model="userInput"></center>
-	<center><button type="button" ng-click="search()">Submit</button></center>
-	<div ng-show="gifIsHere">
+	<center><button class="btn btn-lg btn-default" type="button" ng-click="search()">Submit</button></center></section>
+	<div id="gif" ng-show="gifIsHere">
 		<center><img src="{{ imageSrc }}"></center>
 	</div>
+	<img src=>
 </section>

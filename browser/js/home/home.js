@@ -1,7 +1,6 @@
 // http://api.giphy.com/v1/gifs/search?&api_key=dc6zaTOxFJmzC&q=dogs
-var api = "http://api.giphy.com/v1/gifs/search?";
+var api = 'http://api.giphy.com/v1/gifs/search?';
 var apiKey = '&api_key=dc6zaTOxFJmzC';
-var query = '&q='
 
 app.config(function ($stateProvider) {
     $stateProvider.state('home', {
