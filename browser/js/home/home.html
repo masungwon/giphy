@@ -1,0 +1,9 @@
+<section id="home">
+
+	<h1>Search for gifs:</h1>
+	<center><input type="text" ng-model="userInput"></center>
+	<center><button type="button" ng-click="search()">Submit</button></center>
+	<div ng-show="gifIsHere">
+		<center><img src="{{ imageSrc }}"></center>
+	</div>
+</section>
