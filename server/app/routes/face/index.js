@@ -12,6 +12,7 @@ face.detect(img)
 	//throw responses
 	console.log(response);
 }, function(error){
+	
     //throw errors
     console.log(error);
   }
