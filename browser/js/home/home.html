@@ -1,10 +1,27 @@
 <section id="home">
-
+	<style>
+	body  {
+	    background-image: url("http://wallpapercave.com/wp/Zkc7mGk.jpg");
+	    background-repeat: no-repeat;
+		background-position: center;
+	    background-color: #cccccc;
+	    background-attachment: fixed;
+	    background-size: cover;
+	    width:100%;
+    	height:100%;
+	}
+	</style>
+	<!-- <img src='https://www.blackbox.cool/images/box_factory-7bcdffc0.gif' id='background'/> -->
 	<h1 class="cover-heading">Search for gifs:</h1>
+	<!-- <center> -->
+		<!-- <video id="video" width="400" height="300" preload="auto" loop></video>
+		<canvas id="overlay" width="400" height="300"> -->
+		
+	<!-- </canvas> -->
 	<center><input type="text" ng-model="userInput"></center>
 	<center><button class="btn btn-lg btn-default" type="button" ng-click="search()">Submit</button></center></section>
 	<div id="gif" ng-show="gifIsHere">
 		<center><img src="{{ imageSrc }}"></center>
 	</div>
-	<img src=>
+
 </section>

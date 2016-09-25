@@ -14,8 +14,12 @@ app.config(function ($stateProvider) {
 
 app.controller('HomeCtrl', function($scope, HomeFactory) {
 	$scope.gifIsHere = false;
+	var audio = document.createElement('audio');
 
 	$scope.search = function() {
+		//pause any song playing currently
+		audio.pause();
+
 		HomeFactory.findGif($scope.userInput)
 		.then(function (imageSrc) {
 			$scope.imageSrc = imageSrc;
@@ -24,9 +28,9 @@ app.controller('HomeCtrl', function($scope, HomeFactory) {
 
 		HomeFactory.findSong($scope.userInput)
 		.then(function (songSrc) {
-			$scope.songSrc = songSrc;
-			console.log('songSrc', songSrc);
-			//TODO need to play this songSrc; look at juke asan example
+			//initialize the audio element
+			audio.src = songSrc;
+			audio.play();
 		})
 	}
 })
